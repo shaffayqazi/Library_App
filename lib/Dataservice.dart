@@ -5,7 +5,7 @@ class Dataservice {
   var data;
   Future<void> DataService(String? search) async {
     var endpoint = Uri.parse(
-        "https://www.googleapis.com/books/v1/volumes?q=$search&key=AIzaSyCzoYj4YTsWnevWoJvwgdd8TLlMoiyLgJ8");
+        "https://www.googleapis.com/books/v1/volumes?q=$search&key=API_KEY");
 
     var response = await http.get(endpoint);
     print(response.body.toString());
